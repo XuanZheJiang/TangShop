@@ -1,6 +1,5 @@
 //
 //  BaseRequest.swift
-//  PoKitchen
 //
 //  Created by 蒋轩哲 on 16/7/25.
 //  Copyright © 2016年 蒋轩哲. All rights reserved.
