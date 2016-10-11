@@ -1,7 +1,7 @@
 # TangShop
 
 ## Introduction  
-An Swift3 iOS app
+An Swift 3 iOS app
 
 ## License
 
