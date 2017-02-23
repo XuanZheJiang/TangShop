@@ -10,6 +10,8 @@ import UIKit
 import SwiftyJSON
 import SDWebImage
 class HouseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    var refreshControl = UIRefreshControl()
     
     lazy var tableView: UITableView = {
         let tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_W, height: SCREEN_H));
@@ -24,10 +26,21 @@ class HouseViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var dataArr = [HomeModel]();
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = self.refreshControl
+            refreshControl.addTarget(self, action: #selector(self.refreshClick), for: .valueChanged)
+        } else {
+            // Fallback on earlier versions
+        }
         self.loadData();
         self.view.addSubview(tableView);
+    }
+    
+    func refreshClick() {
+        loadData()
     }
     
     func loadData() -> Void {
@@ -49,6 +62,7 @@ class HouseViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.dataArr.append(model);
                 DispatchQueue.main.async {
                     self.tableView.reloadData();
+                    self.refreshControl.endRefreshing()
                 }
             }
         }
