@@ -76,12 +76,12 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
         collectionView.register(UINib.init(nibName: "ProductCell", bundle: nil), forCellWithReuseIdentifier: "ProductCell");
         collectionView.delegate = self;
         collectionView.dataSource = self;
-        collectionView.contentInset = UIEdgeInsetsMake(0, 0, 113, 0)
+        collectionView.contentInset = UIEdgeInsetsMake(5, 5, 118, 5)
         self.view.addSubview(collectionView);
         collectionView.reloadData();
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { 
         return dataArr.count;
     }
     
@@ -103,7 +103,7 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = (UIScreen.main.bounds.width - 20) / 2;
+        let width: CGFloat = (UIScreen.main.bounds.width - 20 - 10) / 2;
         let height: CGFloat = 220;
         return CGSize(width: width, height: height);
     }

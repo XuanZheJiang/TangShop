@@ -17,6 +17,7 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var priceL: UILabel!
     
     @IBOutlet weak var likeBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.cornerRadius = 5;

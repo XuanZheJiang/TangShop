@@ -130,7 +130,33 @@
 		C7B479D21D94F0DA00E00A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B479D01D94F0DA00E00A83 /* Main.storyboard */; };
 		C7B479D41D94F0DA00E00A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B479D31D94F0DA00E00A83 /* Assets.xcassets */; };
 		F42029283A4DA87AF95A8DAE /* Pods_TangShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B595F7994971A1D81EB1BF82 /* Pods_TangShop.framework */; };
+		FA945FE91E618AB5004A1B6E /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA945FE81E618AB5004A1B6E /* Stickers.xcassets */; };
+		FA945FED1E618AB5004A1B6E /* TangShopMsg.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA945FE61E618AB5004A1B6E /* TangShopMsg.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA945FEB1E618AB5004A1B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B479C11D94F0DA00E00A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA945FE51E618AB5004A1B6E;
+			remoteInfo = TangShopMsg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA945FF11E618AB5004A1B6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA945FED1E618AB5004A1B6E /* TangShopMsg.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A1E4B11330AECAE22CF32A8C /* Pods-TangShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TangShop/Pods-TangShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -294,6 +320,9 @@
 		C7B479D31D94F0DA00E00A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7B479D81D94F0DA00E00A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7EE721D46C1D00E47E09739 /* Pods-TangShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TangShop/Pods-TangShop.debug.xcconfig"; sourceTree = "<group>"; };
+		FA945FE61E618AB5004A1B6E /* TangShopMsg.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TangShopMsg.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA945FE81E618AB5004A1B6E /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		FA945FEA1E618AB5004A1B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -768,6 +797,7 @@
 				C79253351D9500CC002FD412 /* Category */,
 				C792536B1D9500CC002FD412 /* Resoure */,
 				C7B479CB1D94F0DA00E00A83 /* TangShop */,
+				FA945FE71E618AB5004A1B6E /* TangShopMsg */,
 				C7B479CA1D94F0DA00E00A83 /* Products */,
 				A43AA7D35A347A93C8836562 /* Pods */,
 				A53C3FDBF0B791BEBC844946 /* Frameworks */,
@@ -778,6 +808,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B479C91D94F0DA00E00A83 /* TangShop.app */,
+				FA945FE61E618AB5004A1B6E /* TangShopMsg.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -798,6 +829,15 @@
 			path = TangShop;
 			sourceTree = "<group>";
 		};
+		FA945FE71E618AB5004A1B6E /* TangShopMsg */ = {
+			isa = PBXGroup;
+			children = (
+				FA945FE81E618AB5004A1B6E /* Stickers.xcassets */,
+				FA945FEA1E618AB5004A1B6E /* Info.plist */,
+			);
+			path = TangShopMsg;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -811,15 +851,32 @@
 				C7B479C71D94F0DA00E00A83 /* Resources */,
 				88EFCCB8AAC3455F5DE521DC /* [CP] Embed Pods Frameworks */,
 				FFA085A5144CD567E5B4D8FC /* [CP] Copy Pods Resources */,
+				FA945FF11E618AB5004A1B6E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA945FEC1E618AB5004A1B6E /* PBXTargetDependency */,
 			);
 			name = TangShop;
 			productName = TangShop;
 			productReference = C7B479C91D94F0DA00E00A83 /* TangShop.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FA945FE51E618AB5004A1B6E /* TangShopMsg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA945FF01E618AB5004A1B6E /* Build configuration list for PBXNativeTarget "TangShopMsg" */;
+			buildPhases = (
+				FA945FE41E618AB5004A1B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TangShopMsg;
+			productName = TangShopMsg;
+			productReference = FA945FE61E618AB5004A1B6E /* TangShopMsg.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -842,6 +899,11 @@
 							};
 						};
 					};
+					FA945FE51E618AB5004A1B6E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y6SZS4JQ7Q;
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = C7B479C41D94F0DA00E00A83 /* Build configuration list for PBXProject "TangShop" */;
@@ -859,6 +921,7 @@
 			projectRoot = "";
 			targets = (
 				C7B479C81D94F0DA00E00A83 /* TangShop */,
+				FA945FE51E618AB5004A1B6E /* TangShopMsg */,
 			);
 		};
 /* End PBXProject section */
@@ -934,6 +997,14 @@
 				C792532D1D95005F002FD412 /* 1123@2x.png in Resources */,
 				C7ACE6DE1D9A2D27000B9653 /* UMSnsAccountViewController.xib in Resources */,
 				C79253F51D9500CC002FD412 /* TabBar_home_23x23_@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA945FE41E618AB5004A1B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA945FE91E618AB5004A1B6E /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,6 +1111,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA945FEC1E618AB5004A1B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA945FE51E618AB5004A1B6E /* TangShopMsg */;
+			targetProxy = FA945FEB1E618AB5004A1B6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7ACE69E1D9A2D27000B9653 /* UMSocialLocalizable.strings */ = {
@@ -1226,6 +1305,42 @@
 			};
 			name = Release;
 		};
+		FA945FEE1E618AB5004A1B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: XuanZhe Jiang (T7EQ362H83)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XuanZhe Jiang (T7EQ362H83)";
+				DEVELOPMENT_TEAM = Y6SZS4JQ7Q;
+				INFOPLIST_FILE = TangShopMsg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGCM.TangShop.ext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4418f916-0e83-4f75-8774-90746152dc77";
+				PROVISIONING_PROFILE_SPECIFIER = Pro_Dev_TangShop_ext_2017_2_25;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA945FEF1E618AB5004A1B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: XuanZhe Jiang (Y6SZS4JQ7Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: XuanZhe Jiang (Y6SZS4JQ7Q)";
+				DEVELOPMENT_TEAM = Y6SZS4JQ7Q;
+				INFOPLIST_FILE = TangShopMsg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JGCM.TangShop.ext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "552fc4fe-8ac1-45f3-94f5-05e8b1a662b5";
+				PROVISIONING_PROFILE_SPECIFIER = Pro_Distri_TangShop_ext_2017_2_25;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1243,6 +1358,15 @@
 			buildConfigurations = (
 				C7B479DC1D94F0DA00E00A83 /* Debug */,
 				C7B479DD1D94F0DA00E00A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA945FF01E618AB5004A1B6E /* Build configuration list for PBXNativeTarget "TangShopMsg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA945FEE1E618AB5004A1B6E /* Debug */,
+				FA945FEF1E618AB5004A1B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
