@@ -14,27 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Firebase/AdMob (3.7.1):
-    - Firebase/Core
-    - Google-Mobile-Ads-SDK (= 7.12.1)
-  - Firebase/Core (3.7.1):
-    - FirebaseAnalytics (= 3.4.4)
-    - FirebaseCore (= 3.4.3)
-  - FirebaseAnalytics (3.4.4):
-    - FirebaseCore (~> 3.4)
-    - FirebaseInstanceID (~> 1.0)
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
-  - FirebaseCore (3.4.3):
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleUtilities (~> 1.2)
-  - FirebaseInstanceID (1.0.8)
-  - Google-Mobile-Ads-SDK (7.12.1)
-  - GoogleInterchangeUtilities (1.2.2):
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleSymbolUtilities (1.1.2)
-  - GoogleUtilities (1.3.2):
-    - GoogleSymbolUtilities (~> 1.1)
   - JPush (2.1.9)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
@@ -44,47 +23,28 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SwiftyJSON (2.3.2)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - Firebase/AdMob
-  - Firebase/Core
   - JPush
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
   - SDCycleScrollView (~> 1.64)
   - SDVersion
   - SDWebImage (~> 3.8)
-  - SwiftyJSON (from `https://github.com/IBM-Swift/SwiftyJSON.git`)
-
-EXTERNAL SOURCES:
-  SwiftyJSON:
-    :git: https://github.com/IBM-Swift/SwiftyJSON.git
-
-CHECKOUT OPTIONS:
-  SwiftyJSON:
-    :commit: 73b523a107b798021ca9af74b5f7c20e435c8809
-    :git: https://github.com/IBM-Swift/SwiftyJSON.git
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Firebase: be473484f0d515e72ffd04acf22f981773c23e58
-  FirebaseAnalytics: 0533a00b681e08fd0b2cd0444b7ddf0ef9fd7a1a
-  FirebaseCore: 5a885548bbc5f0c410b04f8e9ac9d73ff1221907
-  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
-  Google-Mobile-Ads-SDK: 542eb24c1ce6c8fd5084ee9572fd9dcd2d06065a
-  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
-  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
-  GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   JPush: 8bccf709ace4318a8e7008cc4fab42b706bfad46
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDVersion: 43383b6ac05462c973c3fd92d9748c74e360aba5
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 61d4e28623d1cc213391b1241fc2d87af6af5932
+PODFILE CHECKSUM: 982d67f749a8764af6d7de05c2a904d346e8b997
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.2.0

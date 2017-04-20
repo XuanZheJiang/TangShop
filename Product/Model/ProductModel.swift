@@ -42,7 +42,7 @@ class ProductModel{
     
     init(fromJson json: JSON!){
         
-        if json == nil{
+        if json == JSON.null {
             return
         }
         brandId = json["brand_id"].stringValue as AnyObject!

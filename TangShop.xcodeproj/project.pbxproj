@@ -326,6 +326,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		28ADE0B7CC6EE85D3994BFAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7B479C61D94F0DA00E00A83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -868,6 +875,7 @@
 			buildConfigurationList = FA945FF01E618AB5004A1B6E /* Build configuration list for PBXNativeTarget "TangShopMsg" */;
 			buildPhases = (
 				FA945FE41E618AB5004A1B6E /* Resources */,
+				28ADE0B7CC6EE85D3994BFAB /* Frameworks */,
 			);
 			buildRules = (
 			);

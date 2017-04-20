@@ -9,8 +9,6 @@ target 'TangShop' do
 	pod 'MBProgressHUD', '~> 1.0.0'
 	pod 'MJRefresh'	
 	pod 'SDWebImage', '~>3.8'
-    pod 'Firebase/Core'
-    pod 'Firebase/AdMob'
 	pod 'JPush'
-	pod 'SwiftyJSON', :git => 'https://github.com/IBM-Swift/SwiftyJSON.git'
+	pod 'SwiftyJSON'
 end

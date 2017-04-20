@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         let ani2 = CABasicAnimation()
         ani2.keyPath = "transform.rotation"
-        ani2.toValue = M_PI * 6
+        ani2.toValue = Double.pi * 6
         
         let ani = CAAnimationGroup()
         ani.animations = [ani1, ani2]

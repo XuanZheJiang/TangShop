@@ -19,9 +19,9 @@ class BannersModel{
 	 * Instantiate the instance using the passed json values to set the properties values
 	 */
 	init(fromJson json: JSON!){
-		if json == nil{
-			return
-		}
+        if json == JSON.null {
+            return
+        }
 		channel = json["channel"].stringValue
 		id = json["id"].intValue
 		imageUrl = json["image_url"].stringValue
